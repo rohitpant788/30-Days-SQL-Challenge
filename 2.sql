@@ -72,7 +72,7 @@ ORDER BY p.page_id ASC;
 CREATE TABLE events (
     app_id INTEGER,
     event_type VARCHAR(10),
-    timestamp DATETIME
+    timestamp TIMESTAMP
 );
 
 -- Insert records into the events table
