@@ -20,7 +20,7 @@ INSERT INTO pages (page_id, page_name) VALUES
 CREATE TABLE page_likes (
     user_id INTEGER,
     page_id INTEGER,
-    liked_date DATETIME,
+    liked_date TIMESTAMP, -- Corrected DATETIME to TIMESTAMP
     FOREIGN KEY (page_id) REFERENCES pages(page_id)
 );
 
